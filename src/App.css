@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.pages-container{
+    width: 370px;
+    height: 326px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 0px 10px;
+    box-shadow: 0 0 10px rgba(20, 20, 20, 0.1);
+    padding: 2px 4px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+
+.all-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-y: scroll;
+  }
+  
+  .page-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(221, 218, 218);
+    padding: 8px 15px 22px 8px;
+    width: 100%;
+  }
+
+  .page-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px 22px 8px;
+    width: 100%;
+  }
+
+  .normal-text{
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .button-style{
+    background: #FFCE22;
+    color: #1F2128;
+    width: 340px;
+    height: 100%;
+    border-radius: 4px;
+    padding: 10px 20px;
+  }
+
+  .button-container{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 4px;
+  }
+
+  .tp-spaces{
+    margin-top: 200px !important;
+  }
+  .bt-spaces{
+    margin-bottom: 40px !important;
+  }
+  .tp-spaces-no{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .all-page-container::-webkit-scrollbar { 
+    width: 3px; 
+  }
+  
+  .all-page-container::-webkit-scrollbar-track { /* Track of the scrollbar */
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .all-page-container::-webkit-scrollbar-thumb { /* Thumb of the scrollbar */
+    background-color: #ccc; /* Color of the thumb */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .all-page-container::-webkit-scrollbar-thumb:hover { /* Thumb hover effect */
+    background-color: #888; /* Change color on hover */
+  }
+  
