@@ -38,7 +38,7 @@ const AllPage = () => {
         <p className="normal-text">All pages</p>
         <input type="checkbox" checked={selectAll} onChange={handleSelectAll} />
       </div>
-      <div className="all-page-container">
+      <div className={`all-page-container ${pages.length > 4 ? 'scroller' : ''}`}>
         {pages.map((page, index) => (
           <div key={index} className={`page-content ${index == 0 && pages.length > 4 ? 'tp-spaces': index == pages.length-1 && pages.length > 4 ? 'bt-spaces': 'tp-spaces-no'}`}>
             <p className="normal-text">{page.name}</p>

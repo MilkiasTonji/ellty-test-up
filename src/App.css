@@ -34,7 +34,6 @@ body, html{
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow-y: scroll;
   }
   
   .page-header-container{
@@ -44,6 +43,9 @@ body, html{
     border-bottom: 1px solid rgb(221, 218, 218);
     padding: 8px 15px 22px 8px;
     width: 100%;
+  }
+  .scroller{
+    overflow-y: scroll;
   }
 
   .page-content{
@@ -87,21 +89,21 @@ body, html{
     margin-top: 0px !important;
     margin-bottom: 0px !important;
   }
-  .all-page-container::-webkit-scrollbar { 
+  .scroller::-webkit-scrollbar { 
     width: 3px; 
   }
   
-  .all-page-container::-webkit-scrollbar-track { /* Track of the scrollbar */
+  .scroller::-webkit-scrollbar-track { /* Track of the scrollbar */
     background: #f1f1f1; /* Color of the track */
     border-radius: 10px; /* Rounded corners */
   }
   
-  .all-page-container::-webkit-scrollbar-thumb { /* Thumb of the scrollbar */
+  .scroller::-webkit-scrollbar-thumb { /* Thumb of the scrollbar */
     background-color: #ccc; /* Color of the thumb */
     border-radius: 10px; /* Rounded corners */
   }
   
-  .all-page-container::-webkit-scrollbar-thumb:hover { /* Thumb hover effect */
+  .scroller::-webkit-scrollbar-thumb:hover { /* Thumb hover effect */
     background-color: #888; /* Change color on hover */
   }
   

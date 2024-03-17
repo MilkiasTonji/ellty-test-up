@@ -27,7 +27,7 @@ const SelectedPages = () => {
           <p className="normal-text">Selected Pages</p>
         </div>
 
-        <div className="all-page-container">
+        <div className={`all-page-container ${selectedPages.length > 4 ? 'scroller' : ''}`}>
           {selectedPages.map((page, index) => (
             <div
               key={`data-${page.id}`}
